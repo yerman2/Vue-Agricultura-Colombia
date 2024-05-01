@@ -1,0 +1,10 @@
+.flow-intern {
+	display: grid;
+	gap: 2rem;
+}
+.overflow-x-hidden { overflow-x: hidden; }
+@media (min-width: 1024px) {
+	.flow-intern {
+		grid-template-columns: 1fr 230px;
+	}
+}

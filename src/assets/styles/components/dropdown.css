@@ -1,0 +1,82 @@
+/*Dropdown*/
+.dropdown {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 10rem;
+	transform: translateY(10px);
+	opacity: 0;
+	pointer-events: none;
+	transition: .5s;
+	box-shadow:  0 20px 25px -5px rgb(0 0 0 / 0.4);
+}
+
+.dropdown__list {
+	position: relative;
+	list-style: none;
+	background-color: #1B568F;
+	padding: 0.5rem 0;
+	border-radius: 0.3rem;
+}
+
+.dropdown__item > a {
+	display: flex;
+	/* justify-content: space-between;  */
+	justify-content: flex-start;  /* cambiar a flex-start para alinear a la izquierda */
+	color: #ABD6FF;
+	padding: .5rem 1rem;
+	font-size: .9rem;
+	/* align-items: center; */
+	transition: .3s;
+	
+}
+
+/* Agrega un selector específico para los submenús
+.dropdown__item .dropdown--right .dropdown__list {
+    left: auto; Esto restablecerá la posición izquierda 
+}  */
+
+.dropdown__link {
+	text-decoration: none;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	gap: 0.5rem;
+	align-items: center;
+	transition: all 0.2s ease-in-out;
+}
+
+.dropdown__more-icon {
+	width: 7px;
+	fill: #ABD6FF;
+	transition: all 0.2s ease-in-out;
+}
+
+.dropdown__item:hover > a {
+	color: #ffffff;
+}
+
+
+.dropdown__item:hover .dropdown__more-icon {
+	fill: #ffffff;
+}
+
+.dropdown__item {
+	position: relative;
+}
+
+.dropdown--right {
+	top: -1rem;
+	left: 100%;
+	cursor: pointer;
+	transform: translateX(10px);
+}
+
+.nav__item:hover > .dropdown,
+.dropdown__item:hover > .dropdown {
+	transform: translate(0, 0);
+	opacity: 1;
+	pointer-events: auto;
+}
+
+/*End Dropdown*/

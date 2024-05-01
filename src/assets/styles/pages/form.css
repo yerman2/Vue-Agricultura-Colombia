@@ -1,0 +1,22 @@
+/*Form*/
+.form {
+	display: block;
+}
+
+.control-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.input-wrapper {
+	display: grid;
+}
+
+.just-validate-error-label {
+	margin-top: 0.3rem;
+	color: var(--red-500) !important;
+	font-size: 0.875rem;
+}
+/*End Form*/

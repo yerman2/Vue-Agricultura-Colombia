@@ -1,0 +1,40 @@
+/* Feature Card */
+
+.feature-card {
+	display: grid;
+	gap: 2rem;
+}
+
+.feature-card__image:nth-child(1) {
+	height: fit-content;
+}
+
+.feature-card__title {
+	font-size: 1.3rem;
+	font-weight: 600;
+	margin-bottom: 1.3rem;
+}
+
+.feature-card__text {
+	color: #707070;
+}
+
+.imgcard{
+    height: auto !important;
+    width: 150px  !important;
+}
+
+.imgcard2{
+    height: auto !important;
+    width: 200px  !important;
+}
+
+@media (min-width: 768px) {
+	.feature-card {
+		grid-template-columns: 15rem 1fr;
+	}
+}
+
+
+
+/* Feature Card */

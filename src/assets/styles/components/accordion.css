@@ -1,0 +1,55 @@
+/* Sub-Menú */
+
+.accordion:not(:last-child) {
+	border-bottom: 1px solid #ABD6FF;
+}
+
+.accordion__header {
+	display: block;
+}
+
+.accordion__link {
+	display: grid;
+	place-content: center start;
+	padding-block: 0.9rem !important;
+	padding-inline: 0.9rem;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.accordion__link.active {
+	padding-block: 0.3rem 0.9rem !important;
+}
+
+.accordion__toggle {
+	width: 100%;
+	border: none;
+	background: none;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+	padding: 0;
+}
+
+.accordion__more-icon {
+	display: block;
+	width: 8px;
+	fill: var(--gray-100);
+	transform: rotate(90deg);
+	transition: all 0.2s ease-in-out;
+	padding: 0.5rem 0.9rem;
+}
+
+.accordion__more-icon.active {
+	transform: rotate(-90deg);
+}
+
+.accordion__body {
+	display: none;
+	transition: all 0.2s ease-in-out;
+}
+
+.accordion__body.active {
+	display: block;
+}
+/* Sub-Menú */

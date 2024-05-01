@@ -1,0 +1,377 @@
+/* Nabar*/
+
+  
+  .nav {
+	display: grid;
+	position: relative;
+	background-color: #183e62; /* Fondo del contenedor de navegación */
+  }
+  
+  .nav__list {
+	display: none; /* Oculta la lista de navegación principal */
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding-inline: 1rem;
+	height: 4.3rem; /* Altura del área de la lista de navegación */
+  }
+  
+  .nav__item {
+	display: flex;
+	place-content: center;
+	position: relative;
+  }
+  
+  .nav__item:hover > .dropdown {
+	display: grid; /* Muestra el menú desplegable cuando se pasa el ratón por encima del elemento de navegación */
+	bottom: -3rem; /* Ajusta la posición del menú desplegable */
+  }
+  
+  .nav__link {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	color: #ABD6FF; /* Color del texto en el enlace de navegación */
+	font-weight: 500;
+	font-size: 0.9rem;
+	text-decoration: none;
+	height: 2.5rem; /* Altura del enlace de navegación */
+	padding: 0.9rem 0.75rem;
+	transition: all 0.2s ease-in-out; /* Agrega una transición suave al enlace de navegación */
+  }
+  
+  .nav__item:hover .nav__link {
+	color: #ffffff; /* Cambia el color del texto cuando se pasa el ratón por encima del elemento de navegación */
+  }
+  
+  .nav__more-icon {
+	width: 8px; /* Ancho del icono de flecha */
+	transform: rotate(90deg); /* Rota el icono de flecha */
+	fill: #ABD6FF; /* Relleno del icono de flecha */
+  }
+  
+  .nav__item:hover .nav__more-icon {
+	fill: #ffffff; /* Cambia el color del icono de flecha cuando se pasa el ratón por encima del elemento de navegación */
+  }
+  
+  .nav__indicator {
+	display: none; /* Oculta el indicador de navegación (posiblemente una línea debajo del enlace activo) */
+	width: 100%;
+	height: 1rem;
+	background-color: #16C2F9; /* Color del indicador de navegación */
+  }
+
+/* CCS NUEVO */
+
+:root {
+  box-sizing: border-box;
+
+  --primary: #e70146;
+  --hover-color: #fdd052;
+  --dark: #1c2022;
+  --light: #fff;
+
+  --header-bg: var(--primary);
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "josefin sans", "helvetica", sans-serif;
+  font-size: 1rem;
+}
+
+header {
+  background: #183e62 ;
+  padding-left: 1.5em;
+  position: sticky;
+  top: 0;
+}
+.branding-logo {
+  color: #183e62 ;
+  font-size: calc(0.8rem + 1vw);
+  text-decoration: none;
+  
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.margin-toggle{
+	margin-top: 10px!important;
+    margin-bottom: 10px!important;
+    margin-right: 10px!important;
+
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+.menu li {
+  list-style: none;
+}
+.menu li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0.5em 1.5em;
+  font-size: 1rem;
+}
+
+/* Dandole Estilos a los submenus */
+.has-dropdown {
+  position: relative;
+}
+.submenu {
+  position: absolute;
+  left: 0;
+  background-color: #183e62 ;
+  white-space: nowrap;
+  padding: 0 0;
+  min-width: 16em;
+
+  /* Ocultar Sub-Menus */
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top center;
+}
+.submenu > li > a {
+  padding: 0.8em 1.5em;
+}
+.submenu .submenu {
+  left: -100%;
+  top: 0;
+}
+.submenu .submenu .submenu {
+  left: -100%;
+  top: 0;
+}
+
+.menu > li:hover > a,
+.submenu > li:hover > a {
+  background-color: #183e62;
+  color: white;
+}
+.menu > li:hover > a {
+  background-color: #183e62;
+}
+
+/* Flechas */
+
+.arrow {
+  width: 0.5em;
+  height: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+  border-left: 0.15em solid currentColor;
+  border-bottom: 0.15em solid currentColor;
+  transform: rotate(-45deg);
+  margin-top: -0.25em;
+  transition: transform 100ms ease-in-out;
+}
+
+/* Mostrar */
+.menu > li:hover > a + .submenu,
+.submenu > li:hover > a + .submenu {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+/* Flechas Animadas */
+.menu > li:hover > a > .arrow,
+.submenu > li:hover > a > .arrow {
+  transform: rotate(225deg);
+}
+
+@media only screen and (max-width: 78.75em) {
+  .submenu .submenu .submenu {
+    left: -100%;
+    top: 0.5em;
+  }
+  .submenu {
+    min-width: 16em;
+  }
+}
+@media only screen and (max-width: 58.75em) {
+  .menu li a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  header {
+/*     position: relative; */
+    padding: 1.5em 2em;
+  }
+  .menu {
+    flex-flow: column;
+    position: absolute;
+    background: #183e62;
+    /* top: 4.55em; */
+    left: 0;
+    right: 0;
+    /* Margin que hace que haya espacio o se separe el Menu del lado deerecho */
+    margin-right: 110px;
+    height: 100vh;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: 200ms transform cubic-bezier(0.36, 0.4, 0.42, 1.48) 100ms,100ms opacity ease-in-out;
+    
+    overflow-y: scroll;
+	top: 45px!important;
+  }
+  .menu > li > a {
+    font-size: 1rem;
+    color: white;
+  }
+  .submenu > li > a {
+    font-size: 1rem;
+  }
+
+  .submenu {
+    top: 0;
+    padding-left: 1.5em;
+    /* border-left: 0.12em dotted grey; */
+  }
+  .submenu .submenu {
+    left: 0;
+    top: 0;
+  }
+  .submenu .submenu .submenu {
+    left: 0;
+    top: 0;
+  }
+
+  .menu > li:hover > a + .submenu,
+  .submenu > li:hover > a + .submenu {
+    position: relative;
+  }
+
+  .hamburger {
+    width: 2em;
+    height: 0.25em;
+    display: block;
+    background: grey;
+    position: relative;
+    cursor: pointer;
+    transition: 0.2s transform ease-in-out;
+  }
+  .hamburger::after,
+  .hamburger::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: inherit;
+    width: inherit;
+    height: inherit;
+
+    transition: 0.2s transform ease-in-out;
+  }
+
+  .hamburger::after {
+    top: 0.65em;
+  }
+  .hamburger::before {
+    bottom: 0.65em;
+  }
+
+  .close::after,
+  .close::before {
+    top: 0;
+    transition: 0.2s transform ease-in-out;
+  }
+  .close::before {
+    display: none;
+  }
+  .close {
+    transform: rotate(45deg);
+    transition: 0.2s transform ease-in-out;
+  }
+  .close::after {
+    transform: rotate(-90deg);
+  }
+
+  /* reveal menu */
+  input[type="checkbox"]:checked + .menu {
+    position: absolute;
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+/* Estilo Titulo Menú */
+.titulo-menu{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-left: 28px;
+  margin-bottom: 4px;
+
+}
+
+
+/* Ofucar o Poner Blur al alrea visible cuando el Menu esté abierto */
+body.menu-open {
+  backdrop-filter: blur(3px);
+}
+
+/* Resto de tus estilos... */
+
+/* Estilos para el overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: none;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(1, 26, 31, 0.6);
+  opacity: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100vh;
+  /* Margin para que cubra el Overlay */
+  /* margin-left: 279px; */
+}
+
+.overlay.open {
+  opacity: 1;
+  display: block;
+  z-index: -999;
+}
+
+
+
+main {
+/* just to make scrollable vertically to see sticky navbar    */
+  height: 200vh;
+}
+
+
+@media (min-width: 1024px) {
+	.nav__list {
+		display: flex;
+	}
+
+	.nav__indicator {
+		display: block;
+	}
+
+	.nav__toggle {
+		display: none;
+	}
+	.show {
+		display: none;
+	}
+}
+
+
+/* Navbar */

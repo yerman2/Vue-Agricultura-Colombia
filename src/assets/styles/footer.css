@@ -1,0 +1,16 @@
+/* Footer  */
+
+.footer {
+    /* Estilos para pantallas grandes */
+    margin-top: 40px; /* Puedes ajustar este valor según sea necesario */
+  }
+  
+  /* Media query para pantallas con un ancho menor a 768px (dispositivos móviles) */
+  @media (max-width: 768px) {
+    .footer {
+      margin-top: 10px; /* Ajusta el margen para dispositivos móviles */
+    }
+  }
+
+
+/* Footer */

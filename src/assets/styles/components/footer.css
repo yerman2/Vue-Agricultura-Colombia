@@ -1,0 +1,73 @@
+/*Footer*/
+
+/* Estilos Personalizados */
+.footer__logo-2 img,
+.footer__logo-1 img {
+  width: 120px;
+  max-width: 100%;
+}
+
+/* Ajuste del separador vertical */
+.border-left {
+  border-left: 1px solid #000; /* Puedes ajustar el color según tus necesidades */
+  height: 100%;
+}
+
+/* Media querys: */
+
+@media (min-width: 1357px) {
+
+	.scroll-container {
+	max-height: 650px; /* Altura máxima del contenedor de desplazamiento */
+	overflow-y: scroll; /* Habilitar el desplazamiento vertical */
+  }
+  
+  .scroll-content {
+	width: 100%; /* Ancho del contenido */
+	/* Otros estilos adicionales para el contenido */
+  }
+	  .button-container {
+		  position: relative;
+		  left: -30px;
+		  top: 20px;
+	  }
+}
+
+/*Ipad Pro*/
+@media (min-width: 1024px) and (max-width: 1356px){
+
+
+}
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1023px){
+
+}
+
+/*Telefono*/
+@media (max-width: 767px){
+
+}
+
+/* iphone XR */
+@media (max-width: 414px) {
+
+
+
+}
+
+
+
+/* iphone 12 Pro */
+@media (max-width: 390px) {
+}
+
+
+
+/* iphone SE */
+@media (max-width: 375px) {
+
+
+}
+
+/*End Footer*/

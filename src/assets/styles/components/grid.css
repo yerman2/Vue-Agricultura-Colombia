@@ -1,0 +1,27 @@
+/* Grid Contenido */
+/* Ajuste para modo móvil */
+/* .img-redux{
+  width: 200px!important;
+} */
+
+.texto-centrado{
+  text-align: center;
+}
+/* Ajuste para modo móvil */
+@media (max-width: 767px) {
+    .feature-card {
+      flex-direction: column; /* Cambia la dirección del eje principal a columna en dispositivos móviles */
+    }
+  
+    .feature-card__image {
+      text-align: center; /* Centra la imagen */
+    }
+  }
+  
+  /* Ajuste para tamaños mayores (puedes ajustar el valor según tus necesidades) */
+  @media (min-width: 1200px) {
+    .feature-card__image img {
+      max-width: 250px; /* Ajusta el tamaño máximo de la imagen en pantallas más grandes */
+    }
+  }
+/* Grid Contenido */

@@ -1,0 +1,75 @@
+
+
+td {
+	color: #000000;
+	border: 1px solid #000000;
+}
+
+
+.table {
+	width: 90%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin-bottom: 20px;
+}
+
+/* Estilos de encabezado de columna */
+.table__header {
+	background-color: #1B568F;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+/* Estilos de celda */
+.table__cell {
+	color: #000000;
+	border: 1px solid #ddd;
+	padding: 4px;
+}
+
+.table__celleft {
+	color: #000000;
+	border: 1px solid #ddd;
+	padding: 4px;
+	text-align: left;
+}
+
+/* Estilo de filas impares */
+.table__row:nth-child(odd) {
+	background-color: #f2f2f2;
+}
+
+/* Estilo de filas al pasar el cursor */
+.table__row:hover {
+	background-color: #cce5ff;
+}
+
+
+/* Estilos para las celdas de la tabla */
+.table__row:nth-child(odd) .table__cell {
+    background-color: #f2f2f2;
+ }
+ 
+ /* Estilo de filas al pasar el cursor */
+ .table__row:hover .table__cell {
+    background-color: #cce5ff;
+ }
+ 
+ /* Ajustar la altura de las imágenes en la barra lateral */
+ .aside__list img {
+    height: 50px; /* Ajusta la altura según sea necesario */
+    width: auto;
+    margin-right: 10px; /* Añade un margen derecho para separar la imagen del texto */
+ }
+
+ .margen{
+    /* Acomodando margen para las imagenes */
+    margin-top: 60px;
+ }
+ 
+/* Estilizando el li */
+ .aside__list {
+    list-style-type: none;
+    padding: 0;
+}

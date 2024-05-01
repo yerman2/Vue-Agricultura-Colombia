@@ -1,0 +1,30 @@
+.input {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--gray-300);
+    outline: none;
+    border-radius: 0.3rem;
+  }
+  
+  .input--lg {
+    padding: 0.9rem 1.1rem;
+  }
+  
+  .input::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+  
+  .input__icon-left {
+    padding-left: 2.5rem;
+  }
+  
+  .input[data-icon="search"] {
+    background-image: url(../../svg/ic_outline-search.svg);
+    background-repeat: no-repeat;
+    background-position: 0.8rem center;
+  }
+  
+  .input-ajustado {
+      width: 70%; /* Ajusta el ancho según tus necesidades */
+  }

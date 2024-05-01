@@ -1,0 +1,11 @@
+@media (max-width: 767px) {
+    .align-items-center {
+      min-height: 100vh; /* Mantén el min-height solo para dispositivos móviles */
+    }
+  }
+  
+  /* Fuente Roboto */
+  .roboto-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+  }

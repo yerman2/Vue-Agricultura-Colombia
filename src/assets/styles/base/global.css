@@ -1,0 +1,47 @@
+/*Global Css*/ 
+.section { padding-block: 6rem; }
+
+.font-weight-bold { font-weight: 700; }
+
+.font-weight-extra-bold { font-weight: 800; }
+
+.text-center { text-align: center; }
+
+.justify-self-end { justify-self: end; }
+
+.bg-orange-200 { background-color: var(--orange-200); }
+
+.overflow-x-hidden { overflow-x: hidden; }
+
+.overflow-x-auto { overflow-x: auto; }
+
+.w-full { width: 100% !important; }
+
+.cursor-pointer { cursor: pointer;
+}
+
+.heading01 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.mt-10 {
+	margin-top: 2.5rem;
+}
+
+.p-24 {
+	padding: 1.5rem;
+}
+
+.ml-8 {
+	margin-left: 2rem !important;
+}
+
+/*Responsive para desktop*/
+@media (min-width: 1024px) {
+	.border-left-gray-300 {
+		border-left: 1px solid #c5c4c4;
+	}
+}
+
+/*End Global Css*/

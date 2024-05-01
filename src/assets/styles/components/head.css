@@ -1,0 +1,39 @@
+/*Head*/
+.header {
+	position: sticky;
+	top: 0;
+	z-index: var(4);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #ffffff;
+}
+
+.header__logo {
+	width: 100%;
+	max-width: 40rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin-inline: auto;
+	/* Aumenta la altura 
+	height: 4.3rem; /* Cambia 6rem al valor deseado */
+}
+
+.header__logo img {
+	width: 100%;
+	object-fit: cover;
+	display: grid;
+	/*height: 4.3rem; Establece la altura de la imagen en 4.3 unidades de medida (en este caso, "rem"). */
+	height: 4.6rem;
+}
+
+.header__link {
+	display: none !important;
+}
+
+@media (min-width: 1024px) {
+	.header__overlay {
+		display: none;
+	}
+}
+/*End Head*/

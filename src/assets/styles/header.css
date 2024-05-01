@@ -1,0 +1,19 @@
+/* Header */
+
+.header {
+	position: sticky;
+	top: 0;
+	z-index: 5;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #ffffff;
+}
+
+@media (min-width: 1024px) {
+	.header__overlay {
+		display: none;
+	}
+}
+
+/* Header */

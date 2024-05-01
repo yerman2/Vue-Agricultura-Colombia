@@ -1,0 +1,25 @@
+
+.toggle-icon:before,
+.toggle-icon.active:before {
+	z-index: 1;
+	/* Z-Index para solucionar superposición */
+	font-size: 20px;
+	/* Ajuste del tamaño del ícono */
+	color: #fff;
+	/* Cambio de color para mejorar la visibilidad */
+	transition: 0.3s;
+	/* Agregada una transición para suavizar el cambio */
+}
+
+/* Cambia el ícono cuando el menú está abierto */
+.toggle-icon.active:before {
+	content: '\f00d' !important;
+	/* Cambio del ícono a 'X' */
+}
+
+.toggle-icon {
+	z-index: 1;
+	font-size: 20px;
+	color: #fff;
+	transition: 0.3s;
+}
